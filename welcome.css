@@ -1,0 +1,39 @@
+/* .graph-svg-component{
+    background-color: #fff9ea;
+} */
+
+.sample0 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 20vh;
+    width:20vw;
+}
+.sample1 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 30vh;
+    width:20vw;
+}
+.sample2 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 40vh;
+    width:20vw;
+}
+.sample3 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50vh;
+    width:20vw;
+}
+.sample4 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 60vh;
+    width:20vw;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+
+        body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 960px;
+        height: 500px;
+        position: relative;
+        background-color:  #fff9ea;
+      }
+
+      #sun {
+        stroke: #666;
+        fill: #666;
+      }
+
+      .orbit {
+        stroke: #ccc;
+        fill: transparent;
+      }
+
+      .planet {
+        stroke: #ccc;
+        fill: #fff9ea;
+      }
+
+      .moon {
+        stroke:darkred;
+        fill: darkred;}
+        
+      .graph-svg-component{
+       background-color: #fff9ea;
+       }
+
+       .graph-svg-component2{
+       background-color: #fff9ea;
+       }
+
+       #display_area{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: relative;
+        bottom: 120px;
+        left: 480px;
+
+       }
+       #display_area2{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: relative;
+        bottom: 100px;
+        left: 480px;
+       }
+
+      .sample{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+      }
+
+      #showpic{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        /* font-weight: 300; */
+        color: black;
+        width: 100px;
+        font-size: 25px;
+        color: #000;
+        padding: 0;
+        border-color: rgba(201, 76, 76, 0);
+        background-color: #fff9ea;
+      }
+      .styled {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      border: 10px 10px;
+      line-height: 2;
+      padding: 0 15px;
+      /* font-size: 1rem; */
+      text-align: center;
+      color: #666;
+      /* text-shadow: 1px 1px 1px #000; */
+      border-radius: 2px;
+      background-color:  #fff9ea;
+      border-color: rgba(201, 76, 76, 0);
+      /* background-image: linear-gradient(to top left,
+                                        rgba(0, 0, 0, .2),
+                                        rgba(0, 0, 0, .2) 30%,
+                                        rgba(0, 0, 0, 0)); */
+      /* box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                  inset -2px -2px 3px rgba(0, 0, 0, .6); */
+      }
+
+      /* .styled:hover {
+          background-color: rgb(101, 163, 1);
+      } */
+
+      /* .styled:active {
+          box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                      /* inset 2px 2px 3px rgba(0, 0, 0, .6); 
+      } */
+
+      
+    </style>
+    <link rel="stylesheet" type="text/css" href="welcome.css">
+  </head>
+  <body>
+
+    <h1>NEAR EARTH OBJECT</h1>
+
+    <form  name="testform" >
+    <input type="text" name="searchBoxMM" autocomplete=“off” required-field placeholder="MM" id="showpic">
+    <input type="text" name="searchBoxDD" autocomplete=“off” required-field placeholder="DD" id="showpic">
+    <input type="text" name="searchBoxYY" autocomplete=“off” required-field placeholder="YY" id="showpic">
+    <input class="test styled" type="button" type="play" id="submit" onclick="saveKeyWords();" value="search">
+    </form>
+    
+    <div id="display_area"></div>
+    <div id="display_area2"></div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src= "finalnasa.js"></script>
+    <!-- <script src= "neo.js"></script> -->
+  </body>
+</html>
